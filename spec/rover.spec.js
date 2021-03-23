@@ -25,7 +25,7 @@ it("response returned by receiveMessage contains name of message", function() {
 
 it ("response returned by recieveMessage includes two results if two commands are sent in the message", function() {
   let rover = new rover (98382);
-  let testMess = [new Command ("MOVE", 222), new Command ("STATUS_CHECK")];
+  let commands = [new Command ("MOVE", 222), new Command ("STATUS_CHECK")];
   let test = new Message ("TEST", commands);
 
   expect(rover.receiveMessage(test).results.length).toEqual(2);
