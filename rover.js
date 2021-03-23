@@ -14,7 +14,7 @@ class Rover {
 
           if (command.commandType === "STATUS CHECK") {
             commandObject["completed"]= true;
-            commandObject["roverStatus"] = [];
+            commandObject["roverStatus"] = {
               mode: this.mode,
               generatorWatts: this.generatorWatts,
               position: this.position
