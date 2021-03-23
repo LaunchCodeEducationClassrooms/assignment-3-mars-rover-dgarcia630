@@ -62,7 +62,7 @@ it("responds with false completed value when trying to move in LOW_POWER mode", 
     });
 
     it("responds with position for MOVE command", function() {
-        let rover = new Rover(90210);
+        let rover = new Rover(983282);
         let commands = [new Command("MOVE", 8675309), new Command("STATUS_CHECK")];
         let message = new Message("Thanks for coming to play", commands);
         rover.receiveMessage(message);
